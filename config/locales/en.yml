@@ -24,24 +24,37 @@ en:
     home:
       home: "Home"
       rails: "Ruby on Rails Tutorial"
+      home_page: "This is the home page for the"
+      sample_home: "sample application"
     about:
+      the: "The "
+      is: " is a "
+      and: " and"
       about: "About"
       rails: "Ruby on Rails Tutorial"
       ruby: "Ruby on Rails"
+      book: "Book"
+      scs:  "screencast series"
+      to teach web development with: "to teach web development with"
+      comment: "This is the sample application for the tutorial."
     help:
       help: "Help"
       rails: "Ruby on Rails Tutorial"
       help_d: "Rails Tutorial help page"
+      get_help: "Get help on the Ruby on Rails Tutorial at the"
+      see_help: "To get help on this sample app, see the"
     contact:
       contact: "Contact"
       rails: "Ruby on Rails Tutorial"
       ruby: "Ruby on Rails"
       sample: "Sample App"
-      rails_sample: "Ruby on Rails Tutorial Sample App"
       hello: "Hello world"
       contact_page: "contact page"
+      comment_contact: "Ruby on Rails Tutorial Sample App about the sample app at the"
   layouts:
-    aplication:
-      rails_sample: "Ruby on Rails Tutorial Sample App"
+    application:
+      rs: "Sample App"
+
+
 
 
