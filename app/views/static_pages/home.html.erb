@@ -1,5 +1,5 @@
-<% provide:title, "Home" %>
-<h1><%= t  ".sample" %></h1>
+<% provide:title,t(".home")%>
+<h1><%= t  ".home" %></h1>
 <p>This is the home page for the
-  <a href="https://www.railstutorial.org/"><%= t  ".rails" %></a>
+  <%=link_to t(".rails"), Settings.a%></a>
   sample application.</p>

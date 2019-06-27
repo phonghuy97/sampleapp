@@ -1,7 +1,7 @@
-<% provide:title, "Help" %>
+<% provide:title, t(".help") %>
 <h1><%= t  ".help" %></h1>
-<p>Get help on the <% t."rails"%> at the
-  <a href="https://www.railstutorial.org/help"><%= t  ".help_d" %></a>.
+<p>Get help on the <%= t(".rails")%> at the
+  <%= link_to t(".help_d"), Settings.a_help%></a>.
   To get help on this sample app, see the
-  <a href="https://www.railstutorial.org/book"><em><%= t  ".rails" %></em>
+  <em><%= link_to t(".rails"), Settings.a%></em>
   book</a>.</p>

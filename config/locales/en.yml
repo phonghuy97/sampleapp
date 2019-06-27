@@ -20,4 +20,28 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  static_pages:
+    home:
+      home: "Home"
+      rails: "Ruby on Rails Tutorial"
+    about:
+      about: "About"
+      rails: "Ruby on Rails Tutorial"
+      ruby: "Ruby on Rails"
+    help:
+      help: "Help"
+      rails: "Ruby on Rails Tutorial"
+      help_d: "Rails Tutorial help page"
+    contact:
+      contact: "Contact"
+      rails: "Ruby on Rails Tutorial"
+      ruby: "Ruby on Rails"
+      sample: "Sample App"
+      rails_sample: "Ruby on Rails Tutorial Sample App"
+      hello: "Hello world"
+      contact_page: "contact page"
+  layouts:
+    aplication:
+      rails_sample: "Ruby on Rails Tutorial Sample App"
+
+
