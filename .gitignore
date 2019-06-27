@@ -16,6 +16,14 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
-
+/test/*
+<<<<<<< HEAD
+=======
+/bin/*
+>>>>>>> 6b61675... Add a Static Pages controller
 # Ignore Byebug command history file.
 .byebug_history
+
+config/settings.local.yml
+config/settings/*.local.yml
+config/environments/*.local.yml
