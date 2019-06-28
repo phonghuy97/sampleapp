@@ -39,6 +39,7 @@ en:
       comment: "This is the sample application for the tutorial."
     help:
       help: "Help"
+      book: "Book"
       rails: "Ruby on Rails Tutorial"
       help_d: "Rails Tutorial help page"
       get_help: "Get help on the Ruby on Rails Tutorial at the"
@@ -53,7 +54,7 @@ en:
       comment_contact: "Ruby on Rails Tutorial Sample App about the sample app at the"
   layouts:
     application:
-      rs: "Sample App"
+      Sample_App: "Sample App"
 
 
 
