@@ -1,11 +1,13 @@
 en:
   static_pages:
     home:
-      home: "Home"
+      home: "Welcome to the Sample App"
       rails: "Ruby on Rails Tutorial"
       home_page: "This is the home page for the"
       sample_home: "sample application"
-    about:
+      sign_up: "Sign Up!"
+      logo: "Rails logo"
+    about:  
       the: "The "
       is: " is a "
       and: " and"
@@ -14,7 +16,7 @@ en:
       ruby: "Ruby on Rails"
       book: "Book"
       scs:  "screencast series"
-      to teach web development with: "to teach web development with"
+      commented: "to teach web development with"
       comment: "This is the sample application for the tutorial."
     help:
       help: "Help"
@@ -34,3 +36,20 @@ en:
   layouts:
     application:
       Sample_App: "Sample App"
+    header: 
+      Sample_App: "Sample App"
+      logo: "logo"
+      Home: :"Home"
+      Help: "Help"
+      Log_in: "Log in"
+    footer:
+      rails: "Ruby on Rails Tutorial"
+      michael: "Michael Hartl"
+      about: "About"
+      contact: "Contact"
+      new: "New"
+      by: "by"
+  users:
+    new:
+      sign_up: "Sign Up"
+      comment_signup: "This will be a signup page for new users"
