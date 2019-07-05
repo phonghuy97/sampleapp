@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-=======
-//= require jquery	
-//= require jquery_ujs	
->>>>>>> master
+//= require jquery
+//= require jquery_ujs
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
