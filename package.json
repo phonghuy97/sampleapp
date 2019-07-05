@@ -1,6 +1,5 @@
 {
-  "name": "static",
-
+  "name": "sampleapp",
   "private": true,
   "dependencies": {}
 }

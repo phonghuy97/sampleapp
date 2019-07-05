@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
       log_in user
       redirect_to user
     else
-      flash.now[:danger] = t("controllers.session.err")
+      flash.now[:danger] = t("controllers.session.error")
       render :new
     end
   end
