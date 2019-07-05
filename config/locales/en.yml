@@ -7,7 +7,7 @@ en:
       sample_home: "sample application"
       sign_up: "Sign Up!"
       logo: "Rails logo"
-    about:  
+    about:
       the: "The "
       is: " is a "
       and: " and"
@@ -36,7 +36,7 @@ en:
   layouts:
     application:
       Sample_App: "Sample App"
-    header: 
+    header:
       Sample_App: "Sample App"
       logo: "logo"
       Home: :"Home"
@@ -53,3 +53,18 @@ en:
     new:
       sign_up: "Sign Up"
       comment_signup: "This will be a signup page for new users"
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      password_confirmation: "Confirmation"
+      create: "Create my account"
+    show:
+      not_exits: "User not exitst"
+  controllers:
+    user:
+      welcome: "Welcome to the Sample App!"
+      not_exits: "User not exits"
+  shared:
+    error_messages:
+      contant: " The form contains"
+      error: "error"
