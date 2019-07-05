@@ -1,10 +1,6 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
-
-
-/* mixins, variables, etc. */
-
-$gray-medium-light: #eaeaea;
+@import 'colors';
 
 /* universal */
 
@@ -44,7 +40,6 @@ h2 {
   text-align: center;
   font-weight: normal;
   color: $gray-light;
-  color: blue;
 }
 
 p {
@@ -52,21 +47,19 @@ p {
   line-height: 1.7em;
 }
 
-
-
 /* header */
 
 #logo {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: white;
+  color: $white;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
   &:hover {
-    color: white;
+    color: $white;
     text-decoration: none;
   }
 }
