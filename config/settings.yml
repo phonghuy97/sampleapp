@@ -1,0 +1,14 @@
+rails: "https://www.railstutorial.org/"
+rails_help: "https://www.railstutorial.org/help"
+rails_book: "https://www.railstutorial.org/book"
+rails_contact: "https://www.railstutorial.org/contact"
+screencasts: "http://screencasts.railstutorial.org/"
+ruby: "http://rubyonrails.org/"
+link_Michael: "http://www.michaelhartl.com/"
+rails_new: "http://news.railstutorial.org/"
+VALID_EMAIL_REGEX: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i'
+maxName: 200
+maxMail: 200
+minPass: 3
+urlGravata: "https://secure.gravatar.com/avatar/"
+sizeGravata: 50
