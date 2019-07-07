@@ -1,12 +1,10 @@
 en:
   static_pages:
     home:
-      home: "Welcome to the Sample App"
+      home: "Home"
       rails: "Ruby on Rails Tutorial"
       home_page: "This is the home page for the"
       sample_home: "sample application"
-      sign_up: "Sign Up!"
-      logo: "Rails logo"
     about:
       the: "The "
       is: " is a "
@@ -35,36 +33,4 @@ en:
       comment_contact: "Ruby on Rails Tutorial Sample App about the sample app at the"
   layouts:
     application:
-      Sample_App: "Sample App"
-    header:
-      Sample_App: "Sample App"
-      logo: "logo"
-      Home: :"Home"
-      Help: "Help"
-      Log_in: "Log in"
-    footer:
-      rails: "Ruby on Rails Tutorial"
-      michael: "Michael Hartl"
-      about: "About"
-      contact: "Contact"
-      new: "New"
-      by: "by"
-  users:
-    new:
-      sign_up: "Sign Up"
-      comment_signup: "This will be a signup page for new users"
-      name: "Name"
-      email: "Email"
-      password: "Password"
-      password_confirmation: "Confirmation"
-      create: "Create my account"
-    show:
-      not_exits: "User not exitst"
-  controllers:
-    user:
-      welcome: "Welcome to the Sample App!"
-      not_exits: "User not exits"
-  shared:
-    error_messages:
-      contant: " The form contains"
-      error: "error"
+Sample_App: "Sample App"
