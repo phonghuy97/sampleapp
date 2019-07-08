@@ -78,9 +78,7 @@ en:
       welcome: "Welcome to the Sample App!"
       not_exits: "User not exits"
     session:
-      error: "Invalid email/password combination"
-    session:
-      error: "Invalid email/password combination"
+      invalid_pass: "Invalid email/password combination"
   shared:
     error_messages:
       contant: " The form contains"
