@@ -69,6 +69,8 @@ en:
       save: "Save Change"
       change: "Change"
       update: "Update Users"
+    index:
+      all_users: "All Users"
   sessions:
     new:
       login: "Log in"
