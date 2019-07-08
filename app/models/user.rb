@@ -23,7 +23,7 @@ class User < ApplicationRecord
 
   def remember
     remember = User.new_token
-    update :remember_digest, User.digest remember_token
+    update remember_digest: User.digest remember_token
   end
 
   def forget
