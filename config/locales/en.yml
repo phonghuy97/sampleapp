@@ -64,6 +64,11 @@ en:
       password: "Password"
       password_confirmation: "Confirmation"
       create: "Create my account"
+    edit:
+      edit: "Edit users"
+      save: "Save Change"
+      change: "Change"
+      update: "Update Users"
   sessions:
     new:
       login: "Log in"
