@@ -40,7 +40,7 @@ class UsersController < ApplicationController
 
   def destroy
     User.find(params[:id]).destroy
-    flash[:success] = "User deleted"
+    flash[:success] = t("controllers.user.delete_users")
     redirect_to users_url
   end
 
@@ -52,7 +52,7 @@ class UsersController < ApplicationController
      def logged_in_user
       return if logged_in?
       store_location
-      flash[:danger] = t("controllers.user.please_ln")
+      flash[:danger] = t("controllers.user.please_login")
       redirect_to login_url
     end
 
