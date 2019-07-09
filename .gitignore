@@ -14,10 +14,11 @@
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
-!/log/.keep
-!/tmp/.keep
 /test/*
 /bin/*
+!/log/.keep
+!/tmp/.keep
+
 # Ignore uploaded files in development
 /storage/*
 !/storage/.keep
