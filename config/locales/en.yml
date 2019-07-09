@@ -82,6 +82,11 @@ en:
     user:
       welcome: "Welcome to the Sample App!"
       not_exits: "User not exits"
+      profile: "Profile updated"
+      please_ln: "Please log in."
+      delete_s: "User deleted"
+      delete_er: "Delete error"
+      not_exits: "User not exits"
     sessions:
       invalid_pass: "Invalid email/password combination"
   shared:
