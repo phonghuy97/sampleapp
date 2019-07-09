@@ -34,6 +34,7 @@ class UsersController < ApplicationController
   def update
     @user = User.find_by_id params[:id]
     if @user.update user_params
+    else
       render :edit
     end
   end
