@@ -14,7 +14,6 @@ class UsersController < ApplicationController
     @user = User.new user_params
     if @user.save
       flash.now[:success] = t("controllers.user.welcome")
-      redirect_to root_path
       redirect_to @user
     else
       render :new
@@ -23,6 +22,6 @@ class UsersController < ApplicationController
 
   private
     def user_params
-      params.require(:user).permit :name, :email, :password, :password_confirmation
+      params.require :user.permit :name, :email, :password, :password_confirmation
     end
 end
