@@ -87,9 +87,23 @@ en:
       delete_users: "User deleted"
       delete_error: "Delete error"
       not_exits: "User not exits"
+      check_mail: "Please check your email to activate your account"
     sessions:
       invalid_pass: "Invalid email/password combination"
+      not_activated: "Account not activated. Check your email for the activation link."
+    account_activations:
+      account_activated: "Account activated!"
+      invalid_link: "Invalid activation link"
   shared:
     error_messages:
       contant: " The form contains"
       error: "error"
+  mailers:
+    user_mailer:
+      act_account: "Account Activation"
+      hi: "Hi"
+  user_mailer:
+    account_activation:
+      sample_app: "Sample App"
+      hi: "Hi"
+      click: "Welcome to the Sample App! Click on the link below to activate your account:"
