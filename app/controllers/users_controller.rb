@@ -1,7 +1,9 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, only: [:index, :edit, :update, :destroy]
-  before_action :correct_user,   only: [:edit, :update]
-  before_action :admin_user,     only: :destroy
+  before_action :logged_in_user, only: %i(index edit update destroy)
+  before_action :correct_user, only: %i(edit update)
+  before_action :load_user, only: %i(index edit update destroy)
+  before_action :admin_user, only: :destroy
+
   def new
     @user = User.new
   end
@@ -14,7 +16,7 @@ class UsersController < ApplicationController
   end
 
   def index
-    @users = User.paginate(page: params[:page])
+    @users = User.page(params[:page]).per Settings.num
   end
 
   def create
@@ -27,20 +29,24 @@ class UsersController < ApplicationController
     end
   end
 
-  def edit
-    @user = User.find_by_id params[:id]
-  end
+  def edit; end
 
   def update
     @user = User.find_by_id params[:id]
     if @user.update user_params
+      flash.now[:success] = t("controllers.user.profile")
+      redirect_to @user
+    else
       render :edit
     end
   end
 
   def destroy
-    User.find(params[:id]).destroy
-    flash[:success] = "User deleted"
+    if @user.destroy
+      flash[:success] = t("controllers.user.delete_users")
+    else
+      flash[:danger] = t("controllers.user.delete_error")
+    end
     redirect_to users_url
   end
 
@@ -52,7 +58,7 @@ class UsersController < ApplicationController
      def logged_in_user
       return if logged_in?
       store_location
-      flash[:danger] = t("controllers.user.please_ln")
+      flash[:danger] = t("controllers.user.please_login")
       redirect_to login_url
     end
 
