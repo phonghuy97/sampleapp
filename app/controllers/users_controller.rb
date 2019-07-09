@@ -27,7 +27,7 @@ class UsersController < ApplicationController
     end
   end
 
-  def edit
+  def edit; end
     @user = User.find_by_id params[:id]
   end
 
@@ -40,7 +40,9 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    User.find(params[:id]).destroy
+    if @user.destroy
+    else
+    end
     flash[:success] = t("controllers.user.delete_users")
     redirect_to users_url
   end
