@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
     if user&.authenticate(params[:session][:password])
       if user.activated?
         log_in user
-        params[:session][:remember_me] == '1' ? remember(user) : forget(user)
+        params[:session][:remember_me] == "1" ? remember(user) : forget(user)
         redirect_back_or user
       else
         message  = t("controllers.sessions.not_activated")
@@ -15,7 +15,7 @@ class SessionsController < ApplicationController
       end
     else
       flash.now[:danger] = t(".invalid_pass")
-      render 'new'
+      render "new"
     end
   end
 
