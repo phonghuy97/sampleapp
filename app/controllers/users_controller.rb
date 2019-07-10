@@ -26,7 +26,7 @@ class UsersController < ApplicationController
       flash[:info] = t("controllers.user.check_mail")
       redirect_to root_url
     else
-      render 'new'
+      render :new
     end
   end
 
