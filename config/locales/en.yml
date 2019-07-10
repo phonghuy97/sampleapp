@@ -64,6 +64,11 @@ en:
       password: "Password"
       password_confirmation: "Confirmation"
       create: "Create my account"
+    edit:
+      edit: "Edit"
+      update: "Update"
+      save: "Save"
+      all_users: "AlL users"
   sessions:
     new:
       login: "Log in"
@@ -76,6 +81,11 @@ en:
   controllers:
     user:
       welcome: "Welcome to the Sample App!"
+      not_exits: "User not exits"
+      profile: "Profile updated"
+      please_login: "Please log in."
+      delete_users: "User deleted"
+      delete_error: "Delete error"
       not_exits: "User not exits"
     sessions:
       invalid_pass: "Invalid email/password combination"
