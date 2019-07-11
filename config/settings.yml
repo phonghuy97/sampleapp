@@ -14,3 +14,6 @@ urlGravata: "https://secure.gravatar.com/avatar/"
 sizeGravata: 50
 num: 10
 boostrap: "twitter-bootstrap-3"
+maxContentMicroPost: 140
+micropostSize: 50
+pictute_size: 5
