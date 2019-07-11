@@ -123,6 +123,7 @@ en:
   password_resets:
     new:
       forgot_pass: "Forgot Password"
+      submit: "Submit"
     edit:
       edit: "Reset password"
       password: "Password"
