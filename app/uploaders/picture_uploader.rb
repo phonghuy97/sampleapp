@@ -49,4 +49,3 @@ end
   # def filename
   #   "something.jpg" if original_filename
   # end
-end
