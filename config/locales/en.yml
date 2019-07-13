@@ -117,7 +117,9 @@ en:
       pladehold: "Compose new micropost..."
     user_info:
       profile: "view my profile"
-      micropost: "micropost"
+      microposts_count:
+        one: 1 micropost
+        other: "%{count} microposts"
   mailers:
     user_mailer:
       act_account: "Account Activation"
