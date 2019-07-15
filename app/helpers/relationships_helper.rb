@@ -1,6 +1,6 @@
 module RelationshipsHelper
   def user_unfollow current_user
-    @user = User.find_by_id params[:id]
+    @user = Relationship.find_by_id(params[:id]).followed
     current_user.active_relationships.find_by(followed_id: @user.id)
   end
 
