@@ -290,6 +290,8 @@ GEM
       domain_name (~> 0.5)
     i18n (1.6.0)
       concurrent-ruby (~> 1.0)
+    i18n-js (3.3.0)
+      i18n (>= 0.6.6)
     io-like (0.3.0)
     ipaddress (0.8.3)
     jbuilder (2.9.1)
@@ -458,6 +460,7 @@ DEPENDENCIES
   config
   ffaker
   fog (= 1.42)
+  i18n-js
   jbuilder (~> 2.5)
   jquery-rails
   kaminari

@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   get "/login", to: "sessions#new"
   get "password_resets/new"
   get "password_resets/edit"
-
+  
   post "/signup", to: "users#create"
   post "/login", to: "sessions#create"
 

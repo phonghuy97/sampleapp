@@ -1,6 +1,8 @@
 class Micropost < ApplicationRecord
   belongs_to :user
-  default_scope -> {order(created_at: :desc)}
+  delegate :name, to: :user
+  scope :created, -> {order(created_at: :desc)}
+  scope :userid, -> {where "user_id = ?", id}
   mount_uploader :picture, PictureUploader
 
   validates :user_id, presence: true
@@ -8,7 +10,7 @@ class Micropost < ApplicationRecord
   validate  :picture_size
 
   def picture_size
-    return unless picture.size > Settings.pictute_size.megabytes
+    return if picture.size < Settings.pictute_size.megabytes
     errors.add :picture, t("model.micropost.picture_size")
   end
 end

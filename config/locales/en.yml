@@ -117,7 +117,9 @@ en:
       pladehold: "Compose new micropost..."
     user_info:
       profile: "view my profile"
-      micropost: "micropost"
+      microposts_count:
+        one: 1 micropost
+        other: "%{count} microposts"
   mailers:
     user_mailer:
       act_account: "Account Activation"
@@ -159,3 +161,4 @@ en:
   model:
     micropost:
       picture_size: "should be less than 5MB"
+      notication: "Maximum file size is 5MB. Please choose a smaller file"
