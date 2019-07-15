@@ -126,6 +126,7 @@ en:
     stats:
       following: "following"
       followers: "followers"
+      micropost: "micropost"
   mailers:
     user_mailer:
       act_account: "Account Activation"
