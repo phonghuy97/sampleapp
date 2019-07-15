@@ -162,7 +162,4 @@ en:
   model:
     micropost:
       picture_size: "should be less than 5MB"
-<<<<<<< HEAD
       notication: "Maximum file size is 5MB. Please choose a smaller file"
-=======
->>>>>>> 39ef3c80ed52891d3b63ad445f8dbfb3eb1fdd5e
