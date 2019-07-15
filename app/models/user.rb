@@ -9,7 +9,7 @@ class User < ApplicationRecord
   validates :email, format: {with: Settings.VALID_EMAIL_REGEX},
   presence: true, length: {maximum: Settings.maxMail},
   uniqueness: {case_sensitive: false}
-  validates :password, presence: true, length: {minimum: Settings.minPass}, allow_nil: true
+  validates :password, presence: true, length: {minimum: Settings.minPass}, on: :create
 
   has_secure_password
   class << self
@@ -58,6 +58,10 @@ class User < ApplicationRecord
 
   def password_reset_expired?
     reset_sent_at < Settings.time.hours.ago
+  end
+
+  def feed
+    Micropost.where("user_id = ?", id)
   end
 
   private
