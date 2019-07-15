@@ -10,7 +10,7 @@ class Micropost < ApplicationRecord
   validate  :picture_size
 
   def picture_size
-    return if !picture.size > Settings.pictute_size.megabytes
+    return if picture.size < Settings.pictute_size.megabytes
     errors.add :picture, t("model.micropost.picture_size")
   end
 end
