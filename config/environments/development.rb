@@ -54,12 +54,12 @@ Rails.application.configure do
   config.middleware.use I18n::JS::Middleware
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-  :address => Application.address,
-  :port => Application.port,
-  :domain => Application.domain,
-  :user_name => Application.user_name,
-  :password => Application.password,
-  :authentication => Application.authentication,
+  :address => Settings.address,
+  :port => Settings.port,
+  :domain => Settings.domain,
+  :user_name => Settings.user_name,
+  :password => Settings.password,
+  :authentication => Settings.authentication,
   :enable_starttls_auto => true
   }
 end

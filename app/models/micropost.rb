@@ -2,7 +2,7 @@ class Micropost < ApplicationRecord
   belongs_to :user
   delegate :name, to: :user
   scope :created, -> {order(created_at: :desc)}
-  scope :u_id, -> {where "user_id = ?", id}
+  scope :userid, -> {where "user_id = ?", id}
   mount_uploader :picture, PictureUploader
 
   validates :user_id, presence: true
