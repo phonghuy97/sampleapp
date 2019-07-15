@@ -18,7 +18,7 @@ class RelationshipsController < ApplicationController
     @user = Relationship.find_by_id(params[:id]).followed
     if @user
       current_user.unfollow @user
-      respond_to do |format|
+      respond_to :js
         format.js
       end
     else
