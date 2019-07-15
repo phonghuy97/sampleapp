@@ -5,7 +5,7 @@ class RelationshipsController < ApplicationController
     @user = User.find_by_id params[:followed_id]
     if @user
       current_user.follow @user
-      respond_to do |format|
+      respond_to :js
         format.js
       end
     else
