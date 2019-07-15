@@ -7,6 +7,7 @@ en:
       sample_home: "sample application"
       sign_up: "Sign Up!"
       logo: "Rails logo"
+      feed: "Micropost Feed"
     about:
       the: "The "
       is: " is a "
@@ -72,6 +73,8 @@ en:
     form:
       follow: "Follow"
       unfollow: "Unfollow"
+    show:
+      microposts: "microposts"
   sessions:
     new:
       login: "Log in"
@@ -95,6 +98,10 @@ en:
     sessions:
       invalid_pass: "Invalid email/password combination"
       not_activated: "Account not activated. Check your email for the activation link."
+    micropost:
+      created: "Micropost created!"
+      deleted: "Micropost deleted!"
+      er_delete: "Delete fail"
     account_activations:
       account_activated: "Account activated!"
       invalid_link: "Invalid activation link"
@@ -108,6 +115,17 @@ en:
     error_messages:
       contant: " The form contains"
       error: "error"
+    micropost_form:
+      post: "Post"
+      pladehold: "Compose new micropost..."
+    user_info:
+      profile: "view my profile"
+      microposts_count:
+        one: 1 micropost
+        other: "%{count} microposts"
+    stats:
+      following: "following"
+      followers: "followers"
   mailers:
     user_mailer:
       act_account: "Account Activation"
@@ -133,3 +151,20 @@ en:
       pass_confirm: "Password confirmation"
       confirmation: "Confirmation"
       update: "Update password"
+  microposts:
+    micropost:
+      post: "Posted"
+      ago: "ago"
+      sure: "You sure ?"
+      delete: "delete"
+  views:
+    pagination:
+      first: "« FIRST"
+      last: "LAST »"
+      previous: "‹ PREV"
+      next: "NEXT ›"
+      truncate: "…"
+  model:
+    micropost:
+      picture_size: "should be less than 5MB"
+      notication: "Maximum file size is 5MB. Please choose a smaller file"

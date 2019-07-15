@@ -1,4 +1,5 @@
 require "ffaker"
+# Users
 User.create!(name:  "Nguyễn Huy Phong",
   email: "phonghuy97@gmail.com",
   password: "111",
@@ -18,7 +19,12 @@ User.create!(name:  name,
   activated: true,
   activated_at: Time.zone.now)
 end
-
+# Microposts
+users = User.order(:created_at).take(6)
+50.times do
+  content = FFaker::Lorem.sentence(5)
+  users.each {|user| user.microposts.create!(content: content)}
+end
 # Following relationships
 users = User.all
 user  = users.first

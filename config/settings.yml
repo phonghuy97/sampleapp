@@ -14,9 +14,6 @@ urlGravata: "https://secure.gravatar.com/avatar/"
 sizeGravata: 50
 num: 10
 boostrap: "twitter-bootstrap-3"
-address: "smtp.gmail.com"
-port: 587
-domain: "gmail.com"
-user_name: "tk6ttneo@gmail.com"
-password: "0975983798"
-authentication: "plain"
+maxContentMicroPost: 140
+micropostSize: 50
+pictute_size: 5
