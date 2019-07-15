@@ -6,8 +6,6 @@ class RelationshipsController < ApplicationController
     if @user
       current_user.follow @user
       respond_to :js
-        format.js
-      end
     else
       flash.now[:danger] = t("controllers.user.not_exits")
       redirect_to root_path
@@ -19,8 +17,6 @@ class RelationshipsController < ApplicationController
     if @user
       current_user.unfollow @user
       respond_to :js
-        format.js
-      end
     else
       flash.now[:danger] = t("controllers.user.not_exits")
       redirect_to root_path
