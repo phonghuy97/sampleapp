@@ -10,7 +10,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find_by_id params[:id]
-    @microposts = @user.microposts.paginate(page: params[:page]).per Settings.num
+    @microposts = @user.microposts.page(page: params[:page]).per Settings.num
     return if @user
     flash.now[:danger] = t("controllers.user.not_exits")
     redirect_to root_path
