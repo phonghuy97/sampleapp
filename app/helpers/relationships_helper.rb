@@ -1,6 +1,6 @@
 module RelationshipsHelper
-  def user_unfollow user.id
-    current_user.active_relationships.find_by(followed_id: user.id)
+  def user_unfollow id
+    current_user.active_relationships.find_by(followed_id: id)
   end
 
   def user_follow
